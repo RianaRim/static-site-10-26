@@ -15,3 +15,67 @@ h2 {
 h3 {
   font-weight: 400;
 }
+.article_header,
+.article_content {
+  max-width: 1000rem;
+  margin: 0 auto;
+  padding: 64rem 48rem;
+}
+.backLink {
+  color: #5c5c66;
+  padding: 3rem 6rem;
+  font-weight: 600;
+  transition: color ease 0.6s;
+}
+.backLink::before {
+  content: '← ';
+}
+.backLink:hover {
+  color: #0bf532;
+}
+.article_tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rem;
+  margin: 12rem 0;
+}
+.article_tag {
+  font-size: 13rem;
+  border-radius: 30rem;
+  border: 1rem solid #f4f4f4;
+  padding: 6rem 14rem;
+  color: #5c5c66;
+  background-color: #f4f4f4;
+}
+.article_title {
+  font-size: 64rem;
+  margin: 32rem 0 16rem;
+}
+.article_lead {
+  font-size: 26rem;
+  line-height: 1.3;
+  max-width: 800rem;
+  color: #5c5c66;
+}
+.aloe_img {
+  width: 100%;
+  border-radius: 18rem;
+  max-width: 720rem;
+  display: block;
+  margin: 0 auto;
+}
+img + .article_content-header {
+  margin-top: 128rem;
+}
+.article_content-header {
+  font-size: 32rem;
+  margin: 48rem 0 16rem;
+}
+.article_content-text,
+.article_content-list {
+  line-height: 1.6;
+}
+.article_content-list {
+  list-style-type: square;
+  margin-left: 20rem;
+}
