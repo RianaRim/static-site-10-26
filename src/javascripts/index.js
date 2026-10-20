@@ -1,6 +1,29 @@
 console.log('Стрим от Захарстеллар')
 
 checkElements()
+headerScroll()
+
+function headerScroll() {
+  let header = document.querySelector('.header')
+  let lastScroll = 0
+
+  window.addEventListener('scroll', () => {
+    let scroll = window.scrollY
+
+    if (scroll > 20) {
+      header.classList.add('header-scrolled')
+    } else {
+      header.classList.remove('header-scrolled')
+    }
+    if (scroll > 100 && scroll > lastScroll) {
+      header.classList.add('header-hidden')
+    } else {
+      header.classList.remove('header-hidden')
+    }
+
+    lastScroll = scroll
+  })
+}
 
 function checkElements() {
   let elements = document.querySelectorAll('.reveal')
